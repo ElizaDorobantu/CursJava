@@ -3,7 +3,7 @@ package curs1;
 public class FirstClass {
 	//one line comment
 	//public -> access modifier || String ->DataType || nume - nume variabila
-	public String name = "Oana"; //variabile de instanta
+	public String name = "Oana"; //variabile de instanta, variabila globala
 	public int age;
 
 	public static void main(String[] args) {
