@@ -3,11 +3,11 @@ package TemaCurs2;
 public class Shape {
 	
 	public Shape(int length) {
-		System.out.println("The area of the square is : " + this.calculateSquareArea(length));
+		System.out.println("The area of the square is : " + calculateSquareArea(length));
 	}
 	
 	public Shape(int length, int width) {
-		System.out.println("The area of the rectangle is : " + this.calculateRectangleArea(length,width));
+		System.out.println("The area of the rectangle is : " + calculateRectangleArea(length,width));
 	}
 	
 	public Shape(double radius) {
@@ -19,6 +19,6 @@ public class Shape {
 	}
 
 	public int calculateRectangleArea(int length, int width) {
-		return length*width;
+		return length * width;
 	}
 }
