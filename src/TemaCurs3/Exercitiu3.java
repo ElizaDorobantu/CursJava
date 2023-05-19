@@ -37,9 +37,6 @@ public class Exercitiu3 {
 		else if (obj.ziSaptamana==7) {
 			System.out.println("Astazi este duminica");
 		}
-		else if (obj.ziSaptamana==1) {
-			System.out.println("Astazi este luni");
-		}
 		else  {
 			System.out.println("Saptamana are doar 7 zile. Te rog sa introduci un numar valid");
 		}

@@ -13,7 +13,7 @@ public class Exercitiu2 {
 		obj.punctaj=scan.nextFloat();
 		scan.close();
 		
-		if ((obj.punctaj>0)&&(obj.punctaj<65)) {
+		if ((obj.punctaj>=0)&&(obj.punctaj<65)) {
 			System.out.println("Ai picat. Mai incearca");
 		}
 		else  {
