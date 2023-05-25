@@ -45,4 +45,11 @@ public class PasswordValidated {
 		System.out.println("3. Parola nu trebuie sa fie la fel ca username");
 	}
 
+	public boolean checkPasswordRules() {
+		if (password.length()<10) {
+			System.out.println( "Parola trebuie sa fie de minim 10 caractere");
+			return false;
+		}
+		return true;
+	}
 }
