@@ -20,12 +20,24 @@ public class PasswordValidated {
  */
 	
 	String username;
-	String password;
+	//String password;
+	static boolean valid;
 	Scanner scan = new Scanner(System.in);
 	
 	public static void main(String[] args) {
-		
-
+		PasswordValidated obj = new PasswordValidated();
+		obj.printPasswordRules();
+		obj.getUsername();
+		do { 
+			obj.checkPasswordRules(obj.getPassword());
+		}while(!valid);
+		System.out.println("Parola este valida!");
+		/*```PasswordValidator obj = new PasswordValidator();
+		obj.getUsername();
+		do {
+			obj.printPasswordRules();
+			obj.getPassword();
+		}while (!obj.checkPasswordRules());```*/
 	}
 	
 	public void getUsername() {
@@ -33,9 +45,10 @@ public class PasswordValidated {
 		username=scan.next();
 	}
 	
-	public void getPassword() {
+	public String getPassword() {
 		System.out.println("Te rog introdu parola ");
-		password=scan.next();
+		return scan.next();
+		 
 	}
 	
 	public void printPasswordRules() {
@@ -45,11 +58,22 @@ public class PasswordValidated {
 		System.out.println("3. Parola nu trebuie sa fie la fel ca username");
 	}
 
-	public boolean checkPasswordRules() {
+	public void checkPasswordRules( String password) {
+		valid=true;
 		if (password.length()<10) {
 			System.out.println( "Parola trebuie sa fie de minim 10 caractere");
-			return false;
+			valid = false;
 		}
-		return true;
+		/* password = "Admin"
+		 * password.equals(password.lowerCase())
+		 */
+		if (password.equals(password.toLowerCase())) {
+			System.out.println("Parola trebuie sa contina un upper case");
+			valid = false;
+		}
+		if (password.equals(username)) {
+			System.out.println("Parola nu trebuie sa fie la fel ca username");
+			valid = false;
+		}
 	}
 }
