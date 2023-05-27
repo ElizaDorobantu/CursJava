@@ -17,28 +17,30 @@ public class Exercitiul1 {
 
 	String username;
 	int password;
-	Scanner scan = new Scanner(System.in);
+	static Scanner scan = new Scanner(System.in);
 	
 	public static void main(String[] args) {
 		int i=0;
 		Exercitiul1 obj= new Exercitiul1();
+		
+		do {
 		obj.getUser();
 		obj.getPassword();
-		while (!obj.username.equals("TestUser") && obj.password!=1234 && i<2 ){
-			
+		if (obj.username.equals("TestUser") && obj.password==1234 ){		
+			System.out.println("Login Successful");
+			break;
+		}
+		else
+		{
 			System.out.println("Login Error");
-			obj.getUser();
-			obj.getPassword();
-			i++;
 		}
-		if (obj.username.equals("TestUser") && obj.password==1234) {
-			System.out.println("Login Sucessful");
-		}
-		else if (i==2)
+		i++;
+		} while (i<3);
+		if (i ==3)
 		{
 			System.out.println("Maximum attempts reached. User blocked");
 		}
-		//nu stiu unde sa inchid scan-ul
+		scan.close();
 	}
 	
 	public void getUser() {

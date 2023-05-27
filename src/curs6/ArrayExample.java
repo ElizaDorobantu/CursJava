@@ -21,6 +21,7 @@ public class ArrayExample {
 		
 		for (String element : textArray) {
 			System.out.println(element);
+			
 		}
 	}
 
