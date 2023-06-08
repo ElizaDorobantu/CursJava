@@ -36,7 +36,7 @@ public class RandomNumbers {
 			//dc nu a fost adaugat il adaug
 			int randomNr = 0;
 			while (checkDuplicate(randomNr, numbers)) {
-				randomNr = random.nextInt(9);
+				randomNr = random.nextInt(MAX_NUMBERS);
 			}
 			numbers[index] =randomNr;
 			index++;
