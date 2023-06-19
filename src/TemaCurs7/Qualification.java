@@ -6,12 +6,12 @@ public class Qualification extends Teacher{
 		super(course, experienceYears, schedule);
 	}
 	
-	public boolean verify() {
+	public void verify() {
 		if (Course=="Java" && ExperienceYears==3 && Schedule=="Afternoon") {
-			return true;
+			System.out.println("You are qualified to teach at this school!");
 		}
 		else {
-			return false;
+			System.out.println("You are not qualified!");
 		}
 	}
 }

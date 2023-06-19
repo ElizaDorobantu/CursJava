@@ -13,12 +13,18 @@ public class Account {
 	}
 	
 	public void withdraw(int suma) throws InsufficientFundsException {
-		if (suma > balance) {		
+		if (suma>0) {
+			if (suma > balance) {		
 			throw new InsufficientFundsException();
 			}
-		else {
+			else 
+			{
 			balance=suma-balance;
+			}
 		}
+		else {
+				System.out.println("The amount you have entered must be greater than 0");
+			}
 		
 	}
 	

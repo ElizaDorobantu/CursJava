@@ -10,23 +10,20 @@ care utilizeaza un while pentru a face acelasi lucru*/
 	
 public static int lungimeArray;
 public static int[] array ; 
+Scanner scan = new Scanner (System.in);
 	
 public void introducerelungimeArray() {
 	System.out.println("Cate elemente trebuie sa aiba array-ul?");
-	Scanner scan = new Scanner (System.in);
 	lungimeArray = scan.nextInt();
-	scan.close();
 }
 
 public  void introducereElementeArray() {
-	Scanner scan = new Scanner(System.in);
 	for (int i=0;i<lungimeArray;i++) {
 		System.out.println("Introdu elementul " + i +":" );
 		if(scan.hasNextInt()) {
 			array[i]=scan.nextInt();
 		}
 	}
-	scan.close();
 	
 	/*Scanner scan = new Scanner (System.in);
 	int i=0;
@@ -65,8 +62,6 @@ public static void main(String[] args) {
 	array = new int [lungimeArray];
 	
 	obj.introducereElementeArray();
-	
-	
 	obj.afisareArrayCuFor();
 	System.out.println();
 	obj.afisareArrayCuWhile();

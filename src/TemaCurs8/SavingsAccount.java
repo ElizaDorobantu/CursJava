@@ -9,19 +9,21 @@ public class SavingsAccount extends Account{
 		}
 	
 	public void withdraw(double suma) throws InsufficientFundsException {
-		
-		if (balance >= suma) {			
+		if (suma > 0) {
+			if (balance >= suma) {			
 			System.out.println("Please pick your money!");
 			balance=balance-suma;
 			System.out.println("Your new balance is : " + balance);
 			System.out.println("Thank you for using our ATM");
-		}
+			}
 
-		else {
+			else {
 			System.out.println("The amount you have entered is greater than the available balance :" + balance);
 			System.out.println("Thank you for using our ATM");
 			throw new InsufficientFundsException();
-			
-	}
+			}}
+		else {
+			System.out.println("The amount you have entered must be greater than 0");
+		}
 }
 }
