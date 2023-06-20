@@ -13,8 +13,8 @@ import TemaCurs8.InsufficientFundsException;
  * Intrebam userul ce operatiune vrea sa faca
  * Daca vrea withdraw ( balance = balance - amount ) si printam soldul
  * -->daca withdraw > balanta arunc  InsuficientFunds
- * daca vrea deposit ( balance = balance +amount ) si printam soldul
- * ->daca amount<=0 throw InvalidAccountException
+ * daca vrea deposit ( balance = balance + amount ) si printam soldul
+ * ->daca amount<=0 throw InvalidAmountException
  * daca vrea checkBalance ( printam soldul )
  * 
  * Programul face parte dintr-ul intreg sistem bancar, ceea ce implica multiple conturi
@@ -43,16 +43,15 @@ public class Atm {
 			atm.atmOperations(acc);
 			System.out.println("Do you want to continue?");
 			flag = scan.nextBoolean();
-			break;
 			} 
-			catch ( InvalidAmountException | Insuficient Funds e) {
+			catch ( InvalidAmountException | InsuficientFunds e) {
 				e.printStackTrace();
 			}
 		}
 		
 	}
 	
-	public void atmOperations(CurrentAccount obj) throws InvalidAmountException , InsufficientFunds{
+	public void atmOperations(CurrentAccount obj) throws InvalidAmountException , InsuficientFunds{
 		//Scanner scan = new Scanner (System.in);
 		System.out.println("Hi, Available operations are:");
 		System.out.println("1 Deposit");

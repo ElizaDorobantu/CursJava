@@ -1,5 +1,7 @@
 package curs9;
 
+import TemaCurs8.InsufficientFundsException;
+
 public class CurrentAccount implements Account{
 
 	public double balance;
@@ -12,12 +14,11 @@ public class CurrentAccount implements Account{
 		
 		balance = balance + amount;
 		checkBalance();
-		//System.out.println("Current balance is: " + balance);
-		
+		//System.out.println("Current balance is: " + balance);	
 	}
 
 	@Override
-	public void withdraw(double amount) {
+	public void withdraw(double amount) throws InsuficientFunds{
 		if (amount > balance) {
 			throw new InsuficientFunds ("You don't have sufficient funds!");
 		}

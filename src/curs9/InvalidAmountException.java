@@ -2,7 +2,7 @@ package curs9;
 
 public class InvalidAmountException extends Exception{
 	
-	public InvalidAmountExeption(String mesaj) {
+	public InvalidAmountException(String mesaj) {
 		super(mesaj);
 	}
 }
