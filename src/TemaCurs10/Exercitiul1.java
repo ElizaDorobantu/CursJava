@@ -49,6 +49,7 @@ facem update catalogului cu noua nota.
 			else {
 				map.remove(nume);
 				map.put(nume,nota);
+				System.out.println("Am modificat nota din catalog cu cea noua!");
 			}
 		}
 		
