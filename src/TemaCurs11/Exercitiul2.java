@@ -1,5 +1,6 @@
 package TemaCurs11;
 
+import java.util.Arrays;
 import java.util.Comparator;
 
 /*
@@ -23,12 +24,16 @@ public class Exercitiul2 {
 		Integer[] intArray = {100, 500, 300, 400, 200};
 		Character[] charArray = {'a', 'b', 'd', 'c'};		
 		
-		ordonareLista(textArray);
-		ordonareLista(intArray);
-		ordonareLista(charArray);
+		//ordonareLista(textArray);
+		//ordonareLista(intArray);
+		//ordonareLista(charArray);
+		
+		ordonareListaVersiunea2(textArray);
+		ordonareListaVersiunea2(intArray);
+		ordonareListaVersiunea2(charArray);
 	}
 	
-	public static <E extends Comparable<E>> void ordonareLista(E[] obj) {
+	/*public static <E extends Comparable<E>> void ordonareLista(E[] obj) {
 		E temp;
 		for (int i=0; i< obj.length;i++) {
 			for(int j=0;j<obj.length-1;j++) {
@@ -44,6 +49,11 @@ public class Exercitiul2 {
 			System.out.print(element+ " ");
 		}
 		System.out.println();
+	}*/
+	
+	public static <T> void ordonareListaVersiunea2(T[] obj) {
+		Arrays.sort(obj);
+		System.out.println(Arrays.toString(obj));
 	}
 
 }
