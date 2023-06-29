@@ -32,8 +32,20 @@ public class Exercitiul1 {
 		System.out.println(text.contains(aparitie));
 	}
 	
-	public static void impartirePRopozitii(text) {
+	public static void impartirePropozitii(String text) {
 		StringBuilder sb = new StringBuilder(text);
+		for(int i=0; i<sb.length();i++) {
+			//if(Character.is {
+				sb.insert(i, " ");
+		}
 	}
+	/*
+	public static void stergereAparitii(Sting text, char litera) {
+		StringBuilder sb = new StringBuilder(text);
+		for(int i=0; i<sb.length();i++) {
+			if (sb.getChars(i, litera, null, i))
+			sb.deleteCharAt(litera);
+		System.out.println(sb);
+	}*/
 }
 
