@@ -45,7 +45,8 @@ public class VarargsExample {
 	}
 	
 	
-	public static void printAltceva(int numar, boolean flag, String...values) {
+	public static void printAltceva(int numar, boolean flag, String...values) { 
+		//varargs e ultimul din parametrii
 		
 		for(String element : values) {
 			System.out.println(element);

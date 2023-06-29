@@ -39,7 +39,7 @@ public class SetExample {
 		set.remove("galben");
 		System.out.println(set.size());
 		
-		Iterator<String> iterator = set.iterator();
+		Iterator<String> iterator = set.iterator();//for each <=> iterator
 		while(iterator.hasNext()) {
 			System.out.println(iterator.next());
 		}
