@@ -21,8 +21,7 @@ public class Exercitiul3 {
 				if (i<row.length) {
 				System.out.println(matrix[i][i]);
 				sum+=matrix[i][i];
-				}
-			
+				}	
 				i++;
 			}
 		}

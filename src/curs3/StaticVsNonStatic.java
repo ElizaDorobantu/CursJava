@@ -36,9 +36,9 @@ public class StaticVsNonStatic {
 		System.out.println(person3.departament);
 		System.out.println("-------------------------");
 		
-		System.out.println(person.nume+person.departament);
-		System.out.println(person2.nume+person2.departament);
-		System.out.println(person3.nume+person3.departament);
+		System.out.println(person.nume + " " + person.departament);
+		System.out.println(person2.nume+ " " + person2.departament);
+		System.out.println(person3.nume+ " " + person3.departament);
 	}
 
 }

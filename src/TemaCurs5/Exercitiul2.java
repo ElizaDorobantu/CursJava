@@ -14,9 +14,9 @@ Avem doua numere cu care incepem 0 si 1
 Seria se calculeaza asa (un numar este seria numerelor precedente):*/
 
 public class Exercitiul2 {
-	int cateNr=9;
-	int nr1=0;
-	int nr2=1;
+	int cateNr;
+	int nr1;
+	int nr2;
 	int nrIntermediar;
 	
 	public static void main(String[] args) {	

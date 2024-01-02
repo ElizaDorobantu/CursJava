@@ -19,11 +19,20 @@ public class Exercitiul3 {
 			array[i] = scan.nextInt();
 		}
 		scan.close();
+		System.out.println("----FOR----");
 		for (int i=0;i<10;i++) {
 			if (array[i] % 2 == 0)
 			System.out.print(array[i] + " ");
 		}
-		
+		System.out.println();
+		System.out.println("----WHILE----");
+		int j=0;
+		while (j<10) {
+			if (array[j] % 2 == 0) {
+				System.out.print(array[j] + " ");
+			}
+			j++;
+		}
 			
 
 	}

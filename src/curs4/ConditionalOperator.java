@@ -23,7 +23,7 @@ public class ConditionalOperator {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Te rog introdu primul numar: ");
 		num1=scan.nextInt();
-		System.out.println("Te rog introdu primul numar: ");
+		System.out.println("Te rog introdu al doilea numar: ");
 		num2=scan.nextInt();
 		
 		if(num1>0) {
