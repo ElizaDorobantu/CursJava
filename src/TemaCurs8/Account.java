@@ -19,7 +19,7 @@ public class Account {
 			}
 			else 
 			{
-			balance=suma-balance;
+				balance=balance-suma;
 			}
 		}
 		else {
